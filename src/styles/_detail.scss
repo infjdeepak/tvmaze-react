@@ -1,0 +1,31 @@
+.detail-section {
+  min-height: 90vh;
+  min-height: 90svh;
+
+  h1 {
+    padding-bottom: 4rem;
+  }
+}
+.show-info {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  h5 {
+    padding: 1rem 0;
+  }
+  button {
+    margin: 2rem 0;
+    padding: 0.4rem 3rem;
+    background: $background-color;
+    color: whitesmoke;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+}
+.summary {
+  margin-top: 2rem;
+  p {
+    padding: 1rem 0;
+  }
+}

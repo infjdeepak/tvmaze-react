@@ -1,0 +1,65 @@
+.home-section {
+  h1 {
+    padding: 2rem 0;
+  }
+}
+.tvshow-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 4rem;
+  button {
+    // align-self: center;
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+    background: $gradient;
+    font-weight: bold;
+  }
+}
+.tvshow-card {
+  box-shadow: 0px 2px 4px rgba(51, 55, 59, 0.08),
+    0px 1px 10px rgba(51, 55, 59, 0.06);
+  background: #f6f6f7;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+.tvshow-card-img {
+  display: flex;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    min-height: 40rem;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+.tvshow-card-info {
+  background: #f6f6f7;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  p {
+    align-self: center;
+    font-size: 1.6rem;
+    background: $gradient;
+    padding: 1rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    text-align: center;
+  }
+}
